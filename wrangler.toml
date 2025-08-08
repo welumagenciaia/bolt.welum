@@ -1,8 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "bolt-welum"
 compatibility_flags = ["nodejs_compat"]
-compatibility_date = "2025-03-28"
 pages_build_output_dir = "./build/client"
 send_metrics = false
-type = "javascript"
-account_id = "fd609508ee3310ea823670f81fd257ae"
