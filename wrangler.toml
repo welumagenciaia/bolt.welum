@@ -1,6 +1,6 @@
-name = "your-bolt-diy-project"
+name = "bolt-welum"
 type = "javascript"
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+account_id = "fd609508ee3310ea823670f81fd257ae"
 workers_dev = true
 route = ""
 zone_id = ""
