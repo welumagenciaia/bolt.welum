@@ -1,19 +1,8 @@
+#:schema node_modules/wrangler/config-schema.json
 name = "bolt-welum"
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2025-03-28"
+pages_build_output_dir = "./build/client"
+send_metrics = false
 type = "javascript"
 account_id = "fd609508ee3310ea823670f81fd257ae"
-workers_dev = true
-route = ""
-zone_id = ""
-
-[build]
-command = "pnpm install && pnpm run build"
-# O diretório de saída da sua build. Verifique o package.json do bolt.diy para o script de build.
-# Geralmente é 'dist' ou 'build' para projetos web.
-# Se o bolt.diy gerar uma pasta 'dist' ou 'build' para os arquivos estáticos, use-a aqui.
-# Caso contrário, você pode precisar ajustar o script de build ou a configuração do Cloudflare Pages.
-publish = "./dist" # Exemplo: ajuste para o diretório de saída real da sua build
-
-[vars]
-# Adicione suas variáveis de ambiente aqui, como as chaves de API para os LLMs
-# OPENAI_API_KEY = "your_openai_api_key"
-# ANTHROPIC_API_KEY = "your_anthropic_api_key"
